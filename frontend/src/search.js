@@ -25,7 +25,7 @@ export default class Search extends React.Component {
       return
     }
     this.props.mutateSearchTerm(this.state.query)
-    fetch(`https://vishnu-shksearch.herokuapp.com/search?q=${this.state.query}`)
+    fetch(`http://localhost:3001/search?q=${this.state.query}`)
       .then(res => res.json())
       .then(r => {
         this.props.mutateResult(r)
