@@ -1,0 +1,89 @@
+body {
+  background-color: #ede8e1;
+}
+#search-container {
+  width: 300px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:40%;
+}
+
+input[type=text] {
+  background-color: inherit;
+  border:none;
+  padding: 1px 10px;
+  outline: none;
+  background: url("https://icongr.am/fontawesome/search.svg?size=16&color=currentColor") no-repeat top left;
+  padding-left:30px;
+
+}
+
+.go-icon {
+  padding: 10px;
+  border:0;
+  background: url("https://icongr.am/fontawesome/arrow-right.svg?size=16&color=currentColor") no-repeat;
+}
+
+
+.result-box {
+  background-color: white;
+  padding: 32px;
+  height: 100vh;
+  overflow-y: scroll;
+  float: right;
+  width: 35%;
+}
+
+.single-result {
+  margin-bottom: 25px;
+}
+
+.result-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result-content {
+  margin-top:10px;;
+  margin-left: 20px;
+}
+
+.total-result {
+  float: right;
+}
+
+.result-header {
+  border-bottom: 1px solid;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+}
+
+.scene, .act {
+  border: 1px solid grey;
+  background-color: #cccccc;
+  border-radius: 20%;
+  width: 40px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.note {
+  margin-bottom: 20px;
+}
+
+.image {
+  height: 60vh;
+  margin-top: 200px;
+}
+
+.image-box {
+  float: right;
+  width: 35%;
+}
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+}
