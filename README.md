@@ -27,8 +27,8 @@ folder.
 
 ### Implemented
 1. The results include "play name" and "Act number"
-    * Implemented "play name" retrieval in search. Tried doing it with Regex, since it was not working I have split the complete files into individual plays and the search is done in all the files.
-    * Implemented "ACT" number search with regex and using other apis of suffixarray package. 
+    * Implemented "play name" in search results. Tried doing it with Regex, since it was not working I have split the complete files into individual plays and the search is done in all the files.
+    * Implemented "ACT" number in search results with regex and using other apis of suffixarray package. 
     
 
 2. Changed the search function to a goroutine. 
@@ -37,10 +37,13 @@ folder.
 
 4. Frontend is done with react and followed the provided design.
 
+5. Added the "total number of search results" in frontend.
+
 ### What I could have done more
 1. Convert the individual file search to go routines. Currently it is done via range over loop, I like to do via go routines and channels.
-2. Implement Scene search
-3. Implement pagination in both frontend and server side.
-4. Improve the front-end design
+2. Implement Scene details in search results. Currently only ACT and Play name search is done.
+3. Implement page number in search results.
+4. Implement pagination in both frontend and server side.
+5. Improve the front-end design
 
 
