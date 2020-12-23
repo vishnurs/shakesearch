@@ -69,11 +69,18 @@ func (s *Searcher) Search(query string, channel chan []Result) {
 				// if sceneIdx > -1 {
 				// 	sceneName = s.Content[i][s.Indices[i].SceneIndex[actIdx][0]:s.Indices[i].SceneIndex[actIdx][1]]
 				// }
-
+				startIndex := id[0] - 50
+				endIndex := id[1] + 50
+				if startIndex < 0 {
+					startIndex = id[0]
+				}
+				if endIndex > len(s.Content[i]) {
+					endIndex = id[1]
+				}
 				results = append(results,
 					Result{
 						Play:    i,
-						Content: s.Content[i][id[0]-50 : id[1]+50],
+						Content: s.Content[i][startIndex:endIndex],
 						Act:     actName,
 						Scene:   sceneName,
 					},

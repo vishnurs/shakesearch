@@ -17,7 +17,7 @@ func main() {
 		SuffixArrays: make(search.SuffixArrays),
 		Indices:      make(map[string]*search.Indices),
 	}
-	fmt.Println(searcher.Indices, "IND")
+
 	err := searcher.Load()
 	if err != nil {
 		log.Fatal(err)
